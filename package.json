@@ -2,7 +2,7 @@
   "name": "react-pwa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nemutas.github.io/pwa_test2/",
+  "homepage": "https://siesta51.github.io/react-pwa/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
