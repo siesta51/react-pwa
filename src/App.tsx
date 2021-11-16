@@ -30,10 +30,17 @@ function notifyMe() {
 }
 
 function sendMessage() {
+  if (!("Notification" in window)) {
+    alert("このブラウザはプッシュ通知に対応してません。。。");
+    return;
+  }
+  console.log(Notification.permission);
   if (Notification.permission === "granted") {
     navigator.serviceWorker.ready.then((registration: any) => {
       registration.active.postMessage("hello!!!");
     });
+  } else {
+    alert("通知の許可がもらえませんよ");
   }
 }
 
