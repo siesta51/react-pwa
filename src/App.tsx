@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function notifyMe() {
+  console.log(Notification.permission);
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");
