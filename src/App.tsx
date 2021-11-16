@@ -45,7 +45,7 @@ function App() {
         >
           Learn React
         </a>
-        <div onClick={() => notifyMe()}>通知許可</div>
+        <div onClick={notifyMe}>通知許可</div>
       </header>
     </div>
   );
