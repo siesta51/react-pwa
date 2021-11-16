@@ -74,6 +74,7 @@ registerRoute(
 // registration.waiting.postMessage({type: 'SKIP_WAITING'})
 self.addEventListener("message", function (event) {
   console.log(event);
+  console.log("d");
   self.registration.showNotification(event.data);
   // if (event.data && event.data.type === "SKIP_WAITING") {
   //   self.skipWaiting();

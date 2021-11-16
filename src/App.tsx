@@ -36,8 +36,11 @@ function sendMessage() {
   }
   console.log(Notification.permission);
   if (Notification.permission === "granted") {
+    console.log("a");
     navigator.serviceWorker.ready.then((registration: any) => {
+      console.log("b");
       registration.active.postMessage("hello!!!");
+      console.log("c");
     });
   } else {
     alert("通知の許可がもらえませんよ");
